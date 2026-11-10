@@ -1,0 +1,22 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Repository and privacy checks
+        run: node tools/validate.mjs
+      - name: Plugin adapter smoke test
+        run: node tools/smoke.mjs
+      - name: Package dry run
+        run: npm pack --dry-run
+      - name: Script syntax
+        run: for f in scripts/*.mjs; do node --check "$f"; done

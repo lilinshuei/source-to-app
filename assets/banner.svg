@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="source-to-app · 源码打包">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1f17"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.22" r="0.55">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <rect width="1200" height="280" fill="url(#glow)"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.16">
+    <circle cx="1010" cy="70" r="120"/>
+    <circle cx="1010" cy="70" r="168"/>
+    <circle cx="1010" cy="70" r="216"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.9">
+    <rect x="64" y="46" width="38" height="6" rx="3"/>
+    <rect x="1120" y="228" width="26" height="6" rx="3"/>
+  </g>
+  <text x="64" y="104" fill="#ffffff" fill-opacity="0.62" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="16" letter-spacing="4">DEEPSEEK HARNESS · SKILL</text>
+  <text x="64" y="164" fill="#ffffff" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="46" font-weight="700">source-to-app</text>
+  <text x="64" y="210" fill="#ffffff" fill-opacity="0.92" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="24">源码到双击即用，只差这一条命令</text>
+  <text x="64" y="250" fill="#ffffff" fill-opacity="0.55" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="16">Electron / Node 桌面项目打包：自动处理镜像、长路径、缓存清理，并在打完包后真去检查包里有什么。</text>
+</svg>

@@ -1,0 +1,11 @@
+# ===========================================================================
+# source-to-app — DSH bundle patch
+# ===========================================================================
+# 安装：
+#   dsh plugin --profile web add github:lilinshuei/source-to-app
+#   dsh plugin --profile desktop add github:lilinshuei/source-to-app
+# ===========================================================================
+
+- insert:
+    - id: source-to-app
+      name: source-to-app
