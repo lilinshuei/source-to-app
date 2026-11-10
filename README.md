@@ -10,6 +10,7 @@
 
 [![validate](https://github.com/lilinshuei/source-to-app/actions/workflows/validate.yml/badge.svg)](https://github.com/lilinshuei/source-to-app/actions/workflows/validate.yml)
 [![License](https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/v/source-to-app?style=flat-square)](https://www.npmjs.com/package/source-to-app)
 [![dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-1f6feb?style=flat-square)](https://github.com/topics/dsh-plugin)
 [![Runtime deps](https://img.shields.io/badge/runtime%20deps-0-lightgrey?style=flat-square)](#环境要求)
 
@@ -33,13 +34,21 @@
 
 ## 安装
 
-### DSH 一条命令（推荐）
+### npm 一行安装（推荐）
+
+```powershell
+dsh plugin --profile web add source-to-app
+```
+
+包已发布到 npm registry，命令最短，也不依赖 GitHub 访问。桌面端把 `web` 换成 `desktop`；装完重启 DSH，新会话即可调用。
+
+### 从 GitHub 安装
 
 ```powershell
 dsh plugin --profile web add github:lilinshuei/source-to-app
 ```
 
-桌面端把 `web` 换成 `desktop`。装完重启 DSH，新会话即可调用。
+想跟最新提交，或 npm 拉取不畅时用这条。
 
 ### 手动安装
 
